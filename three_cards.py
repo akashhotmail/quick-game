@@ -1,5 +1,7 @@
-import random
+
+
 def three_cards():
+    import random
     print("This be a 3 cards game. You will get three cards at random.")
     player_cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
     computer_cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
@@ -118,14 +120,3 @@ def three_cards():
                 print("Outstanding! You won the entire game!")
             if computer_score > player_score:
                 print("Unfortunately, the computer won these three rounds. Try again next time.")
-
-while True:
-    play = input("Do you want to play some games? ")
-    if play == "no" or play == "nah" or play == "im good":
-        break
-    else:
-        which_game = input("What game do you want to play (Dice roll, RPS, coin toss, 3 cards)? ")
-        if which_game == "three_cards" or which_game == "tres_cards":
-            three_cards()
-        else:
-            break
