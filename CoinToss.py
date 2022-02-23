@@ -1,4 +1,4 @@
-def coinToss():
+def coinToss_game():
     from random import randrange
     repeat = 'Yes'
     while repeat == 'Yes':
